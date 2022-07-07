@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-destination: /var/www/my-app/
+destination: /var/www/app-rails/
 permissions:
-  - object: /var/www/my-app/
+  - object: /var/www/app-rails/
 pattern: “**”
 owner: ubuntu
 group: ubuntu
