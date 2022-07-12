@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
-destination: /var/www/app-rails/
+destination: /var/app/app-rails/
 permissions:
-  - object: /var/www/app-rails/
+  - object: /var/app/app-rails/
 pattern: “**”
 owner: ubuntu
 group: ubuntu
