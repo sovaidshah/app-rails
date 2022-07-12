@@ -1,7 +1,5 @@
 version: 0.0
 os: linux
-files:
-  - source: ./
 destination: /var/www/app-rails/
 permissions:
   - object: /var/www/app-rails/
