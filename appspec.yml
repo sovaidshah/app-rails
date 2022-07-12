@@ -10,6 +10,6 @@ owner: ubuntu
 group: ubuntu
 mode: 775
 hooks:
-AfterInstall:
-  - location: scripts/dependencies_install.sh
-runas: ubuntu
+  AfterInstall:
+    - location: scripts/dependencies_install.sh
+      runas: ubuntu
