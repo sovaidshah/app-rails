@@ -6,5 +6,4 @@ cd /opt/app-rails/
 sudo gem install nokogiri — — use-system-libraries
 bundle config build.nokogiri — use-system-libraries
 sudo gem install bundler — user-install
-unset BUNDLE_GEMFILE
-bundle install
+sudo bundle install
