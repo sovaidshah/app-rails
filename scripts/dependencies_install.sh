@@ -8,3 +8,5 @@ git pull origin master
 #bundle config build.nokogiri — use-system-libraries
 #sudo gem install bundler — user-install
 sudo bundle install
+rails db:migrate
+rails server
