@@ -3,7 +3,7 @@ os: linux
 destination: /opt/app-rails/
 permissions:
   - object: /opt/app-rails/
-pattern: “**”
+pattern: "**"
 owner: ubuntu
 group: ubuntu
 mode: 775
