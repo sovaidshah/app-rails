@@ -1,12 +1,28 @@
 version: 0.0
 os: linux
-destination: /opt/app-rails/
-permissions:
-  - object: /opt/app-rails/
-pattern: "**"
-owner: ubuntu
-group: ubuntu
-mode: 775
+files:
+  - source: /config.ru
+    destination: /home/ec2-user/ruby-on-rails
+  - source: /Gemfile
+    destination: /home/ec2-user/ruby-on-rails
+  - source: /Gemfile.lock
+    destination: /home/ec2-user/ruby-on-rails
+  - source: /Rakefile
+    destination: /home/ec2-user/ruby-on-rails
+  - source: /README.md
+    destination: /home/ec2-user/ruby-on-rails
+  - source: /app/
+    destination: /home/ec2-user/ruby-on-rails/app
+  - source: /config/
+    destination: /home/ec2-user/ruby-on-rails/config
+  - source: /lib/
+    destination: /home/ec2-user/ruby-on-rails/lib
+  - source: /log/
+    destination: /home/ec2-user/ruby-on-rails/log
+  - source: /vendor/
+    destination: /home/ec2-user/ruby-on-rails/vendor
+  - source: /public/
+    destination: /home/ec2-u]ser/ruby-on-rails/public
 hooks:
   AfterInstall:
     - location: scripts/dependencies_install.sh
