@@ -5,14 +5,14 @@ files:
     destination: /home/ubuntu/app-rails
   - source: /Gemfile.lock
     destination: /home/ubuntu/app-rails
-#  - source: /Rakefile
-#    destination: /home/ubuntu/app-rails
-#  - source: /README.md
-#    destination: /home/ubuntu/app-rails
+  - source: /Rakefile
+    destination: /home/ubuntu/app-rails
+  - source: /README.md
+    destination: /home/ubuntu/app-rails
   - source: /app/
     destination: /home/ubuntu/app-rails/app
-#  - source: /config/
-#    destination: /home/ubuntu/app-rails/config
+  - source: /config/
+    destination: /home/ubuntu/app-rails/config
   - source: /lib/
     destination: /home/ubuntu/app-rails/lib
   - source: /log/
@@ -21,6 +21,7 @@ files:
     destination: /home/ubuntu/app-rails/vendor
   - source: /public/
     destination: /home/ubuntu/app-rails/public
+file_exists_behavior: OVERWRITE
 hooks:
   AfterInstall:
     - location: scripts/dependencies_install.sh
