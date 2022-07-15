@@ -13,4 +13,5 @@ cd /home/ubuntu/app-rails
 #bundle config build.nokogiri — use-system-libraries
 #sudo gem install bundler:2.3.17
 #sudo bundle install
+sudo service nginx start
 passenger start -a 18.208.183.50 -d
