@@ -14,4 +14,4 @@ cd /home/ubuntu/app-rails
 #sudo gem install bundler:2.3.17
 #sudo bundle install
 sudo service nginx start
-bundle exec passenger start -p 80 -a 18.208.183.50 -d
+passenger start -p 80 -a 18.208.183.50 -d
