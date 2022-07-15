@@ -11,6 +11,6 @@ cd /home/ubuntu/app-rails
 ##sudo apt-get install ruby2.3-dev libffi-dev -y
 #sudo gem install nokogiri — — use-system-libraries
 #bundle config build.nokogiri — use-system-libraries
-#sudo gem install bundler — user-install
+sudo gem install bundler:2.3.17
 sudo bundle install
 bundle exec passenger start -p 80 -a 0.0.0.0 -d
