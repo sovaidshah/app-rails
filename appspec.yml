@@ -1,20 +1,18 @@
 version: 0.0
 os: linux
 files:
-  - source: /config.ru
-    destination: /home/ubuntu/app-rails
   - source: /Gemfile
     destination: /home/ubuntu/app-rails
   - source: /Gemfile.lock
     destination: /home/ubuntu/app-rails
-  - source: /Rakefile
-    destination: /home/ubuntu/app-rails
-  - source: /README.md
-    destination: /home/ubuntu/app-rails
+#  - source: /Rakefile
+#    destination: /home/ubuntu/app-rails
+#  - source: /README.md
+#    destination: /home/ubuntu/app-rails
   - source: /app/
     destination: /home/ubuntu/app-rails/app
-  - source: /config/
-    destination: /home/ubuntu/app-rails/config
+#  - source: /config/
+#    destination: /home/ubuntu/app-rails/config
   - source: /lib/
     destination: /home/ubuntu/app-rails/lib
   - source: /log/
